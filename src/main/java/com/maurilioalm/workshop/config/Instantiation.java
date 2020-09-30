@@ -1,6 +1,8 @@
 package com.maurilioalm.workshop.config;
 
 
+import java.util.Arrays;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
@@ -23,9 +25,7 @@ public class Instantiation implements CommandLineRunner {
 		User alex = new User(null, "Alex Green", "alex@gmail.com");
 		User bob = new User(null, "Bob Grey", "bob@gmail.com");
 		
-		userRepository.save(maria);
-		userRepository.save(alex);
-		userRepository.save(bob);
+		userRepository.saveAll(Arrays.asList(maria, alex, bob));
 
 	}
 
