@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.maurilioalm.workshop.domain.Post;
-import com.maurilioalm.workshop.domain.User;
 import com.maurilioalm.workshop.repository.PostRepository;
 import com.maurilioalm.workshop.services.exception.ObjectNotFoundException;
 
